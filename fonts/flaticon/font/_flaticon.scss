@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 06/05/2019 12:06
+    Creation date: 18/07/2019 07:36
     */
 
     @font-face {
@@ -37,16 +37,16 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-airplane:before { content: "\f100"; }
-.flaticon-add:before { content: "\f101"; }
-.flaticon-ferry:before { content: "\f102"; }
-.flaticon-box:before { content: "\f103"; }
-.flaticon-lorry:before { content: "\f104"; }
-.flaticon-warehouse:before { content: "\f105"; }
+    .flaticon-car:before { content: "\f100"; }
+.flaticon-car-1:before { content: "\f101"; }
+.flaticon-valet:before { content: "\f102"; }
+.flaticon-valet-1:before { content: "\f103"; }
+.flaticon-traffic:before { content: "\f104"; }
+.flaticon-key:before { content: "\f105"; }
     
-    $font-Flaticon-airplane: "\f100";
-    $font-Flaticon-add: "\f101";
-    $font-Flaticon-ferry: "\f102";
-    $font-Flaticon-box: "\f103";
-    $font-Flaticon-lorry: "\f104";
-    $font-Flaticon-warehouse: "\f105";
+    $font-Flaticon-car: "\f100";
+    $font-Flaticon-car-1: "\f101";
+    $font-Flaticon-valet: "\f102";
+    $font-Flaticon-valet-1: "\f103";
+    $font-Flaticon-traffic: "\f104";
+    $font-Flaticon-key: "\f105";

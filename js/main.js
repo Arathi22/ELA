@@ -8,9 +8,7 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
-	$(".loader").delay(1000).fadeOut("slow");
-  $("#overlayer").delay(1000).fadeOut("slow");	
-
+	
 	var siteMenuClone = function() {
 
 		$('.js-clone-nav').each(function() {
@@ -133,31 +131,34 @@ jQuery(document).ready(function($) {
 		    items: 1,
 		    loop: true,
 				stagePadding: 0,
-		    margin: 0,
+		    margin: 20,
 		    smartSpeed: 1000,
 		    autoplay: true,
 		    nav: true,
-				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
 		    responsive:{
 	        600:{
-	        	margin: 0,
+	        	margin: 20,
 	        	nav: true,
 	          items: 2
 	        },
 	        1000:{
-	        	margin: 0,
+	        	margin: 20,
 	        	stagePadding: 0,
 	        	nav: true,
 	          items: 2
-	        },
-	        1200:{
-	        	margin: 0,
-	        	stagePadding: 0,
-	        	nav: true,
-	          items: 3
 	        }
 		    }
 			});
+			$('.custom-next').click(function(e) {
+				e.preventDefault();
+				$('.nonloop-block-13').trigger('next.owl.carousel');
+			})
+			$('.custom-prev').click(function(e) {
+				e.preventDefault();
+				$('.nonloop-block-13').trigger('prev.owl.carousel');
+			})
+
+			
 		}
 
 		$('.slide-one-item').owlCarousel({
@@ -243,7 +244,7 @@ jQuery(document).ready(function($) {
 		}
 
 	};
-	// siteDatePicker();
+	siteDatePicker();
 
 	var siteSticky = function() {
 		$(".js-sticky-header").sticky({topSpacing:0});
